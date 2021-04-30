@@ -1,0 +1,37 @@
+body{
+    height: 100vh;
+    width: 100vw;
+    text-align: center;
+}
+
+a{
+    display: inline-block;
+    height: 84px;
+    width: 84px;
+    margin: 12px;
+    background-position-y: 100%;
+    transition: ease-out 0.3s;
+    background-image: url("./img/social-sprite.png");
+    box-shadow: 3px 3px 3px black;
+}
+
+a:hover{
+    transition: ease-in 0.3s;
+    background-position-y: 50%;
+}
+
+.facebook{
+    background-position-x: 0%;
+}
+
+.twitter{
+    background-position-x: 80%;
+}
+
+.youtube{
+    background-position-x: 100%;
+}
+
+.linkedin{
+    background-position-x: 40%;
+}
