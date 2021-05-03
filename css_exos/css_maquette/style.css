@@ -6,8 +6,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Abel&family=Open+Sans&display=swap');
 
 body{
-    height: 100vh;
-    width: 100vw;
+    padding: 0;
+    margin: 0;
 }
 
 h1, h2{
@@ -29,9 +29,10 @@ a:visited{
 /* Header */
 
 header{
-    height: 350px;
+    padding-top: 50px;
+    min-height: 350px;
     width: 100%;
-    position: relative;
+    text-align: center;
     background-image: url("./img/bg-header.jpg");
     background-size: 100% 190%;
     background-repeat: no-repeat;
@@ -39,14 +40,13 @@ header{
 
 #logo{
     width: 100%;
-    position: absolute;
-    margin: 50px 0;
+    margin: 0 auto 80px 0;
     text-align: center;
 }
 
 #logo>img{
-    height: 150px;
-    width: 150px;
+    height: 180px;
+    width: 180px;
     margin: 0;
     border: 1px solid lightgrey;
     outline: 3px solid rgb(37, 37, 37);
@@ -55,26 +55,27 @@ header{
 
 #logo>h1{
     margin: 0;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     font-weight: lighter;
 }
 
 nav{
-    top: 90%;
-    left: 40%;
-    position:absolute;
+    height: 40px;
+    width: 400px;
     background-color: white;
-    margin: 0;
+    margin: auto;
     padding: 0;
 }
 
 ul{
+    display: inline-block;
+    height: 100%;
+    width: 100%;
     margin: 0;
-    padding: 0 10px;
+    padding: 6px 34px;
 }
 
 ul li{
-    padding: 0 10px;
     list-style: none;
 }
 
@@ -89,18 +90,26 @@ ul a, span{
 #welcome{
     height: 300px;
     text-align: center;
-    padding: 40px 25px;
+    padding: 40px 30px;
+}
+
+#welcome>hr{
+    width: 98%;
 }
 
 .display-1{
     margin: 0;
+    font-size: 3.7rem;
 }
 
 .lead{
-    font-size: 1.5rem;
+    width: 100%;
+    font-size: 1.15rem;
 }
 
 .blue{
+    position: absolute;
+    margin: 18px -60px;
     padding: 10px;
     border-radius: 10px;
     background-color: #4d82a1;
@@ -124,22 +133,35 @@ ul a, span{
 }
 
 #competence>.bg-light{
-    vertical-align: middle;
-    display: -webkit-inline-box;
-    padding: 20px 20px;
-    margin-top: 20px;
-    margin-left: 290px;
+    min-height: 120px;
+    padding: 10px 20px;
+    margin: 20px auto 0 auto;
     width: 65%;
 }
 
-.bg-light>div{
-    width: 93%;
-    padding: 15px;
+#competence>.bg-light>div{
+    width: 100%;
+    padding: 15px 10px;
 }
 
-.bg-light>img{
+.bg-light>div>p{
+    padding: 0;
+    margin: 0;
+    font-size: 0.8rem;
+    line-height: 1.5;
+}
+
+.bg-light>div>h2{
+    padding: 0;
+    margin: 0;
+    padding-bottom: 10px;
+}
+
+#competence>.bg-light>img{
     height: 100px;
     width: 100px;
+    float: left;
+    padding: 10px 16px 0 0;
 }
 
 /* Section Références */
@@ -155,16 +177,15 @@ ul a, span{
 }
 
 #container{
-    position: relative;
     width: 100%;
     display: -webkit-inline-box;
-    margin-left: 210px;
-    margin-bottom: 50px;
+    margin: 0 auto 50px auto;
 }
 
 #container>div{
     text-align: center;
-    width: 25%;
+    width: 20%;
+    margin: 0 auto;
 }
 
 figure{
