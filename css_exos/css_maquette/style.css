@@ -1,0 +1,191 @@
+/* Import des feuilles de styles */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css');
+
+@import url("css/bg-color.css");
+
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Open+Sans&display=swap');
+
+body{
+    height: 100vh;
+    width: 100vw;
+}
+
+h1, h2{
+    font-family: 'Abel', sans-serif;
+}
+
+p, a{
+    font-family: 'Open Sans', sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:visited{
+    text-decoration: none;
+}
+
+/* Header */
+
+header{
+    height: 350px;
+    width: 100%;
+    position: relative;
+    background-image: url("./img/bg-header.jpg");
+    background-size: 100% 190%;
+    background-repeat: no-repeat;
+}
+
+#logo{
+    width: 100%;
+    position: absolute;
+    margin: 50px 0;
+    text-align: center;
+}
+
+#logo>img{
+    height: 150px;
+    width: 150px;
+    margin: 0;
+    border: 1px solid lightgrey;
+    outline: 3px solid rgb(37, 37, 37);
+    outline-offset: -4px;
+}
+
+#logo>h1{
+    margin: 0;
+    font-size: 1.3rem;
+    font-weight: lighter;
+}
+
+nav{
+    top: 90%;
+    left: 40%;
+    position:absolute;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+}
+
+ul{
+    margin: 0;
+    padding: 0 10px;
+}
+
+ul li{
+    padding: 0 10px;
+    list-style: none;
+}
+
+ul a, span{
+    padding: 5px 2px;
+    float: left;
+    color: black;
+}
+
+/* Section Welcome */
+
+#welcome{
+    height: 300px;
+    text-align: center;
+    padding: 40px 25px;
+}
+
+.display-1{
+    margin: 0;
+}
+
+.lead{
+    font-size: 1.5rem;
+}
+
+.blue{
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #4d82a1;
+    color:lightgrey;
+}
+
+/* Section Parcours */
+
+#competence{
+    padding: 40px 40px 80px 40px;
+    position: relative;
+}
+
+#competence>hr{
+    width: 40%;
+    margin-bottom: 40px;
+}
+
+.display-2{
+    text-align: center;
+}
+
+#competence>.bg-light{
+    vertical-align: middle;
+    display: -webkit-inline-box;
+    padding: 20px 20px;
+    margin-top: 20px;
+    margin-left: 290px;
+    width: 65%;
+}
+
+.bg-light>div{
+    width: 93%;
+    padding: 15px;
+}
+
+.bg-light>img{
+    height: 100px;
+    width: 100px;
+}
+
+/* Section Références */
+
+#ref{
+    position: relative;
+    padding: 20px;
+}
+
+#ref>hr{
+    width: 40%;
+    color: lightgrey;
+}
+
+#container{
+    position: relative;
+    width: 100%;
+    display: -webkit-inline-box;
+    margin-left: 210px;
+    margin-bottom: 50px;
+}
+
+#container>div{
+    text-align: center;
+    width: 25%;
+}
+
+figure{
+    text-align: center;
+}
+
+figure>img{
+    height: 220px;
+    width: 220px;
+}
+/* Section Footer*/
+
+footer{
+    text-align: center;
+    padding: 15px 15px 30px 15px;
+}
+
+.footer{
+    color: lightgrey;
+}
+
+.footer a{
+    color:#7e98a7;
+}
