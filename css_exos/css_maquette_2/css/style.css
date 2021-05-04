@@ -1,0 +1,240 @@
+@font-face {
+    font-family: "DroidSerif";
+    src: url("/font/DroidSerif.ttf") format("ttf");
+}
+@font-face {
+    font-family: "DroidSerif";
+    src: url("/font/DroidSerif-Bold.ttf") format("ttf");
+    font-weight: bold;
+}
+@font-face {
+    font-family: "DroidSerif";
+    src: url("/font/DroidSerif-BoldItalic.ttf") format("ttf");
+    font-style: italic;
+    font-weight: bold;
+}
+@font-face {
+    font-family: "DroidSerif";
+    src: url("/font/DroidSerif-Italic.ttf") format("ttf");
+    font-style: italic;
+}
+@font-face {
+    font-family: "WisdomScriptAJ";
+    src: url("/font/WisdomScriptAJ.woff") format("woff");
+}
+
+:root{
+    --yellow: #fed136;
+    --white: #ffffff;
+    --dark: #333333;
+    --gray: #737373;
+    --lightgrey: #f7f7f7;
+}
+
+body{
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
+
+h2, h3, h4{
+    margin: 0;
+    padding: 0;
+    font-family: "DroidSerif-Bold", sans-serif;
+    font-weight: bold;
+}
+
+a{
+    text-decoration: none;
+    font-family: "DroidSerif-Bold", sans-serif;
+    font-weight: bold;
+}
+
+p{
+    margin: 0;
+    padding: 0;
+    font-family: "DroidSerif", serif;
+}
+
+.flex_col{
+    display: flex;
+    flex-direction: column;
+}
+
+.flex_row{
+    display: flex;
+    flex-direction: row;
+}
+
+/* Header */
+
+header{
+    height: 100%;
+    background: url("/img/bg_header.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+nav{
+    padding: 40px 150px 150px 150px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.website_name{
+    font-family: "WisdomScriptAJ";
+    color: var(--yellow);
+    font-weight: lighter;
+    font-size: 2.1rem;
+}
+
+.navbar{
+    width: 40%;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.navbar a{
+    color: var(--white);
+}
+
+.header_titles{
+    height: 260px;
+    justify-content: space-around;
+    align-items: center;
+    color: var(--white);
+}
+
+.welcome{
+    font-size: 2.2rem;
+}
+
+.welcome2{
+    font-size: 3.6rem;
+    font-family: "DroidSerif-Bold", sans-serif;
+    font-weight: bold;
+    font-style: normal;
+}
+
+.header_titles>a{
+    color: var(--white);
+    padding: 18px 30px;
+    background-color: var(--yellow);
+    border-radius: 2px;
+}
+
+/* Main */
+
+main p{
+    color: var(--gray);
+}
+
+main>div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main_titles{
+    text-align: center;
+}
+
+.main_titles>h2{
+    font-size: 2.2rem;
+}
+
+.main_titles>p{
+    font-size: 1rem;
+}
+
+.main_el{
+    width: 960px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* SERVICES */
+
+.services{
+    height: 450px;
+}
+
+.main_titles{
+    margin-bottom: 60px;
+}
+
+.services_card{
+    height: 200px;
+    width: 300px;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+
+.services_icons{
+    height: 45px;
+    width: 45px;
+    padding: 10px;
+    border: 3px solid var(--yellow);
+    border-radius: 50px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.icon_basket{
+    background-image: url("/img/icons/icon-basket.png");
+}
+
+.icon_laptop{
+    background-image: url("/img/icons/icon-laptop.png");
+}
+
+.icon_locked{
+    background-image: url("/img/icons/icon-locked.png");
+}
+
+/* PORTFOLIO */
+
+.portfolio{
+    height: 1000px;
+    padding: 50px 0 30px 0 ;
+    background-color: var(--lightgrey);
+}
+
+.portfolio>.main_el{
+    flex-wrap: wrap;
+}
+
+figure{
+    margin: 0 0 40px 0;
+    max-width: 30%;
+}
+
+figure img{
+    display: block;
+    width: 100%;
+}
+
+figcaption{
+    text-align: center;
+    box-sizing: border-box;
+    padding: 23px 0;
+    width: 100%;
+    background-color: var(--white);
+}
+
+/* TEAM */
+
+.team{
+    height: 600px;
+}
+
+/* PARTNERS */
+
+.partners{
+    height: 150px;
+    background-color: var(--lightgrey);
+}
